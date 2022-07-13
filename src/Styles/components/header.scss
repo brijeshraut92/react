@@ -1,0 +1,142 @@
+@import "../variables";
+@import "../components/resp.scss";
+ .header {
+    display: flex;
+    height: 80px;
+
+    .container {
+        width: 100%;
+        padding: 16px 150px 16px 150px;
+    }
+
+    .logo {
+        width: 100px;
+        margin-top: -18px;
+    }
+
+    .center {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .links {
+        font: var(--unnamed-font-style-normal) normal var(--unnamed-font-size-16) / var(--unnamed-line-spacing-24) var(--unnamed-font-family-muli);
+        letter-spacing: var(--unnamed-character-spacing-0);
+        text-align: left;
+        color: var(--unnamed-color-1B252C);
+        opacity: 1;
+    }
+
+    .icon {
+        width: var(--unnamed-font-size-16);
+        margin-right: 8px;
+    }
+
+    .menu-icon {
+        width: 18px;
+        height: 12px;
+    }
+
+    .cart-icon {
+        width: var(--unnamed-font-size-20);
+        margin-right: 8px;
+    }
+
+    .cart-bg {
+        padding: 0.5rem 1rem;
+        border-radius: 25px;
+        margin-left: 1rem;
+        text-decoration: none;
+    }
+
+    .bump {
+        animation: bump 300ms ease-out;
+    }
+
+    @keyframes bump {
+        0% {
+            transform: scale(1);
+        }
+
+        10% {
+            transform: scale(0.9);
+        }
+
+        30% {
+            transform: scale(1.1);
+        }
+
+        50% {
+            transform: scale(1.15);
+        }
+
+        100% {
+            transform: scale(1);
+        }
+    }
+
+    @media screen and (max-width: $Tablet) and (min-width: ($Mobile )) {
+
+        height: 48px;
+
+        .container {
+            max-width: $Tablet;
+            padding: 0px 15px 0px 15px;
+        }
+
+        .logo {
+            width: 100px;
+            margin-top: -16px;
+        }
+
+        .logo-center {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .cart-bg {
+            padding: 0.4rem 0.4rem;
+            border-radius: 25px;
+            margin-left: -0.9rem;
+        }
+
+    }
+
+    @media screen and (max-width: $Desktop) and (min-width: ($Tablet + 1)) {
+        .container {
+            max-width: $Desktop;
+            padding: 0px 15px 0px 15px;
+        }
+
+        .logo {
+            width: 128px;
+            margin-top: -8px;
+        }
+
+        .logo-center {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+    }
+
+    @media screen and (max-width: $Desktop-md) and (min-width: ($Desktop + 1)) {
+        .container {
+            max-width: $Desktop-md;
+        }
+    }
+
+    @media screen and (max-width: $Desktop-lg) and (min-width: ($Desktop-md + 1)) {
+        .container {
+            max-width: $Desktop-lg;
+        }
+    }
+
+    @media screen and (max-width: $Desktop-xl) and (min-width: ($Desktop-lg + 1)) {
+        .container {
+            max-width: $Desktop-xl;
+        }
+    }
+}

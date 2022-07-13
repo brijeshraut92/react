@@ -1,0 +1,73 @@
+.filter {
+    .tiltle {
+        font: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-normal) var(--unnamed-font-size-20) / 14px var(--unnamed-font-family-muli);
+        letter-spacing: var(--unnamed-character-spacing-0);
+        color: var(--gray-d2);
+        text-align: left;
+        opacity: 1;
+    }
+
+    .divider {
+        border-top: 1px solid #e4e0e0;
+    }
+
+    .btn {
+        border: 2px solid var(--white);
+        border-radius: 4px;
+        padding: 19px 25px;
+        text-align: center;
+        display: inline-block;
+        margin: 4px 2px;
+    }
+
+    .btn-black {
+        background: var(--unnamed-color-172026) 0% 0% no-repeat padding-box;
+    }
+
+    .btn-white {
+        background: var(--white) 0% 0% no-repeat padding-box;
+        border: 2px solid #DFE1E2;
+    }
+
+    .btn-darkGreen {
+        background: var(--positive-1) 0% 0% no-repeat padding-box;
+    }
+
+    .btn-yellow {
+        background: #fdba5e 0% 0% no-repeat padding-box;
+    }
+
+    .btn-blue {
+        border: 2px solid var(--white);
+        background: var(--primary-m1) 0% 0% no-repeat padding-box;
+        border-radius: 4px;
+    }
+
+    .btn-red {
+        background: #e34850 0% 0% no-repeat padding-box;
+    }
+
+    .btn-darkBlue {
+        background: var(--primary-d1) 0% 0% no-repeat padding-box;
+    }
+
+    .btn-pink {
+        background: #f9009a 0% 0% no-repeat padding-box;
+    }
+
+    .btn-orange {
+        background: #eb7327 0% 0% no-repeat padding-box;
+    }
+
+    .btn-rainbow {
+        background: transparent linear-gradient(180deg,
+                #af52ff 0%,
+                #7950e8 16%,
+                #4f5ada 29%,
+                #57cb76 43%,
+                #ebc250 56%,
+                #ff8810 69%,
+                #e32f0f 83%,
+                #bf1919 100%) 0% 0% no-repeat padding-box;
+    }
+}

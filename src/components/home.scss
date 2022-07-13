@@ -1,0 +1,92 @@
+@import "../Styles/components/resp.scss";
+@import "../Styles/aem-grid-12.css";
+html,
+body {
+    font-family: "muli",;
+}
+    .container {
+        width: 100%;
+        padding: 0px 150px 0px 150px;
+    }
+    .row {
+        margin: 16px 0;
+    }
+    .col{
+        min-height: 32px;
+    }
+    .uppercase {
+        text-transform: uppercase;
+    }
+    .text-right {
+        text-align: right;
+    }
+    .float-right{
+        float: right;
+    }
+
+    
+    .mr-rt-32 {
+        margin-right: var(--unnamed-line-spacing-32);
+    }
+    .justify-content-center{
+        justify-content: center;
+    }
+    
+    
+
+
+
+@media screen and (max-width: $Tablet) and (min-width: $Mobile) {
+    .container {
+        max-width: $Tablet;
+        padding: 0px 15px 0px 15px;
+    }
+    .custom--phone--hide {
+        display: none;
+    }
+    .mr-rt-32 {
+        margin-right: var(--unnamed-line-spacing-17-5) !important;
+    }
+    .reverse{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .text-center {
+        text-align: center !important;
+    }
+    
+}
+@media screen and (max-width: $Desktop) and (min-width: ($Tablet + 1)) {
+    .container {
+        max-width: $Desktop;
+        padding: 0px 15px 0px 15px !important;
+    }
+    .custom--desktop--hide {
+        display: none;
+    }
+}
+@media screen and (max-width: $Desktop-md) and (min-width: ($Desktop + 1)) {
+    .container {
+        max-width: $Desktop-md;
+    }
+    .custom--desktop--hide {
+        display: none;
+    }
+}
+@media screen and (max-width: $Desktop-lg) and (min-width: ($Desktop-md + 1)) {
+    .container {
+        max-width: $Desktop-lg;
+    }
+    .custom--desktop--hide {
+        display: none;
+    }
+}
+@media screen and (max-width: $Desktop-xl) and (min-width: ($Desktop-lg + 1)) {
+    .container {
+        max-width: $Desktop-xl;
+    }
+    .custom--desktop--hide {
+        display: none;
+    }
+}
+
